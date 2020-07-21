@@ -1,0 +1,43 @@
+{
+   "name": "login-auth",
+   "version": "1.0.0",
+   "description": "",
+   "main": "server.js",
+   "scripts": {
+      "start": "node server.js",
+      "server": "nodemon server.js",
+      "client": "npm start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+   },
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "belle": "^4.0.0",
+      "body-parser": "^1.19.0",
+      "bootstrap": "^4.4.1",
+      "classnames": "^2.2.6",
+      "concurrently": "^4.1.1",
+      "dotenv": "^8.0.0",
+      "express": "^4.17.1",
+      "is-empty": "^1.2.0",
+      "jsonwebtoken": "^8.5.1",
+      "jwt-decode": "^2.2.0",
+      "mongoose": "^5.6.9",
+      "node-sass": "^4.14.0",
+      "passport": "^0.4.0",
+      "passport-jwt": "^4.0.0",
+      "react": "^16.13.1",
+      "react-bootstrap": "^1.0.1",
+      "react-bootstrap-star-rating": "^3.5.5-alpha.0.3",
+      "react-css-property-operations": "^15.4.1",
+      "react-dom": "^16.13.1",
+      "react-scripts": "^3.4.1",
+      "validator": "^11.1.0"
+   },
+   "devDependencies": {
+      "nodemon": "^2.0.3",
+      "npm-client-modules": "0.0.1"
+   }
+}
